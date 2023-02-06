@@ -1,0 +1,141 @@
+.form-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d6d0d0;
+}
+
+.form-container{
+    width: 60%;
+    min-width: 300px;
+    height: 80vh;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    z-index: 2;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+}
+
+.form-image{
+    width: 40%;
+    height: 100%;
+    background-image: url(../img/wardrobe.jpg);
+    justify-content: center;
+}
+
+.form-image .brand-logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+    margin-top: 60%;
+}
+
+.form{
+    width: 60%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-heading{
+    font-size: 53px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 40px;
+    font-family: 'lato', sans-serif;
+    color: black;
+    outline: none;
+    border-radius: 5px;
+}
+
+::placeholder{
+    color: rgb(78, 74, 74);
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:focus{
+    border: 2px solid rgb(4, 149, 253);
+}
+
+input:focus::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.error{
+    display: block;
+    font-size: .8rem;
+    color: red;
+    margin: 5px 0;
+    text-transform: capitalize;
+    font-family: 'lato', sans-serif;
+    user-select: none;
+    opacity: 0;
+}
+
+.error.show{
+    opacity: 1;
+}
+
+#tc{
+    _webkit-appearence: none;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: 1px solid #b9b9b9;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.tc-text{
+    margin-left: 5px;
+    font-size: .8rem;
+    font-family: 'lato', sans-serif;
+}
+
+.tc-text a{
+    color: black;
+}
+
+.submit-btn{
+    display: block;
+    margin: 20px 0;
+    width: 100px;
+    padding: .8rem 0;
+    border-radius: 5px;
+    background: rgb(45, 42, 42);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    opacity: 0.6;
+}
+
+.submit-btn:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.other-form-link{
+    font-family: 'lato', sans-serif;
+    color: #000;
+    font-size: .8rem;
+    text-transform: capitalize;
+}
